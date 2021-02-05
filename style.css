@@ -1,0 +1,49 @@
+/*
+    All version, default element style
+*/
+
+/*@font-face {*/
+/*    font-family: "Roboto";*/
+/*    src: url("./fonts/Roboto-Regular.ttf") format("ttf");*/
+/*}*/
+
+/*@font-face { !*400 weight*!*/
+/*    font-family: "Roboto-Medium";*/
+/*    src: url("./fonts/Roboto-Medium.ttf") format("ttf");*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "Roboto-Bold"; !*700 weight*!*/
+/*    src: url("./fonts/Roboto-Bold.ttf") format("ttf");*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "Roboto-Black"; !*900 weight*!*/
+/*    src: url("./fonts/Roboto-Black.ttf") format("ttf");*/
+/*}*/
+
+h2{
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+
+/*
+    Mobile version from 380px to 1280px
+*/
+
+
+
+
+
+
+/*
+    Desktop version from 1280px to ~
+*/
+
+@media screen and (min-width: 1280px) {
+
+}
