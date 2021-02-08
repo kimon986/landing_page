@@ -15,8 +15,13 @@
     <body>
         <div class="home_wrapper">
             <nav class="home_nav">
-                <img src="images/nav1.png"/>
-                <img src="images/nav2.png"/>
+                <img src="images/nav1.svg"/>
+<!--                <img src="images/nav2.png"/>-->
+                <div class="burger__container">
+                    <div class="burger__line-first"></div>
+                    <div class="burger__line-secont"></div>
+                    <div class="burger__line-third"></div>
+                </div>
             </nav>
             <div class="home_content">
                 <div>
@@ -179,36 +184,16 @@
                     <p>Free</p>
                     <p>Organize across all apps by hand</p>
                 </div>
-                <div>
+                <div class="price_money__container">
                     <div>
-                        <p>10</p>
+                        <h1>10</h1>
                     </div>
                     <div>
                         <div>
-                            <p>$</p>
+                            <h3>$</h3>
                         </div>
                         <div>
-                            <p>Per Month</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <button>Order Now</button>
-                </div>
-                <div>
-                    <p>Free</p>
-                    <p>Organize across all apps by hand</p>
-                </div>
-                <div>
-                    <div>
-                        <p>10</p>
-                    </div>
-                    <div>
-                        <div>
-                            <p>$</p>
-                        </div>
-                        <div>
-                            <p>Per Month</p>
+                            <h5>Per Month</h5>
                         </div>
                     </div>
                 </div>
@@ -219,16 +204,36 @@
                     <p>Free</p>
                     <p>Organize across all apps by hand</p>
                 </div>
-                <div>
+                <div class="price_money__container">
                     <div>
-                        <p>10</p>
+                        <h1>10</h1>
                     </div>
                     <div>
                         <div>
-                            <p>$</p>
+                            <h3>$</h3>
                         </div>
                         <div>
-                            <p>Per Month</p>
+                            <h5>Per Month</h5>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button>Order Now</button>
+                </div>
+                <div>
+                    <p>Free</p>
+                    <p>Organize across all apps by hand</p>
+                </div>
+                <div class="price_money__container">
+                    <div>
+                        <h1>10</h1>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>$</h3>
+                        </div>
+                        <div>
+                            <h5>Per Month</h5>
                         </div>
                     </div>
                 </div>
@@ -298,10 +303,10 @@
                 // Initialize and add the map
                 function initMap() {
                 // The location of Uluru
-                const uluru = { lat: -25.344, lng: 131.036 };
+                const uluru = { lat: 37.7633928, lng: -122.4245425 };
                 // The map, centered at Uluru
                 const map = new google.maps.Map(document.getElementById("map"), {
-                    zoom: 4,
+                    zoom: 12.74,
                     center: uluru,
                 });
                 // The marker, positioned at Uluru
