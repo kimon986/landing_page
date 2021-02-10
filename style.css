@@ -121,7 +121,7 @@ h5 {
 */
 
 html {
-    max-width: 433px;
+    max-width: 435px;
 }
 
 .home_nav {
@@ -248,7 +248,7 @@ html {
 
 .newsletter_wrapper {
     background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
-    width: 418px;
+    background-size: cover;
     height: 601px;
     display: flex;
     flex-direction: column;
@@ -347,7 +347,58 @@ html {
     margin-bottom: 50px;
 }
 
+.testimonials_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+.testimonials_wrapper > div > h2 {
+    margin-bottom: 105.22px
+}
+
+.testimonials_wrapper > div > h4 {
+    color: #374754;
+    font-size: 13.5256px;
+}
+
+.testimonials_wrapper > div:nth-child(2) > img {
+    margin: 0 11px 53.26px 0;
+}
+
+.testimonials_wrapper > div:nth-child(3) {
+    margin: 0 67.5px 53px 67.5px;
+}
+
+.testimonials_wrapper > div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials_wrapper > div:nth-child(4) > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials_wrapper > div:nth-child(4) > div > div:first-child > p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10.1442px;
+    line-height: 15px;
+    color: #374754;
+}
+
+.testimonials_wrapper > div:nth-child(4) > div > div:last-child > p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.6802px;
+    line-height: 23px;
+    color: #252B42;
+}
 
 
 /*
