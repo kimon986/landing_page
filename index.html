@@ -105,7 +105,7 @@
             <div>
                 <form action="/action_page.php">
                     <input type="email" id="email" name="email" placeholder="Your Email"><br>
-                    <input type="submit" id="subscribe" value="Subscribe"/>
+                    <input type="submit" id="subscribe1" value="Subscribe"/>
                 </form>
             </div>
         </div>
@@ -177,67 +177,73 @@
                 <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
             </div>
             <div class="pricing_cards">
-                <div>
-                    <p>Free</p>
-                    <p>Organize across all apps by hand</p>
-                </div>
-                <div class="price_money__container">
+                <div class="pricing_card">
                     <div>
-                        <h1>10</h1>
+                        <h3>Free</h3>
+                        <h5>Organize across all apps by hand</h5>
                     </div>
-                    <div>
+                    <div class="price_money__container">
                         <div>
-                            <h3>$</h3>
+                            <h1>10</h1>
                         </div>
                         <div>
-                            <h5>Per Month</h5>
+                            <div>
+                                <h3>$</h3>
+                            </div>
+                            <div>
+                                <h5>Per Month</h5>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <button>Order Now</button>
-                </div>
-                <div>
-                    <p>Free</p>
-                    <p>Organize across all apps by hand</p>
-                </div>
-                <div class="price_money__container">
-                    <div>
-                        <h1>10</h1>
                     </div>
                     <div>
-                        <div>
-                            <h3>$</h3>
-                        </div>
-                        <div>
-                            <h5>Per Month</h5>
-                        </div>
+                        <button>Order Now</button>
                     </div>
                 </div>
-                <div>
-                    <button>Order Now</button>
-                </div>
-                <div>
-                    <p>Free</p>
-                    <p>Organize across all apps by hand</p>
-                </div>
-                <div class="price_money__container">
+                <div class="pricing_card">
                     <div>
-                        <h1>10</h1>
+                        <h3 style="text-transform: uppercase;">standard</h3>
+                        <h5>Organize across all apps by hand</h5>
+                    </div>
+                    <div class="price_money__container">
+                        <div>
+                            <h1>10</h1>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>$</h3>
+                            </div>
+                            <div>
+                                <h5>Per Month</h5>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <div>
-                            <h3>$</h3>
-                        </div>
-                        <div>
-                            <h5>Per Month</h5>
-                        </div>
+                        <button>Order Now</button>
                     </div>
                 </div>
-                <div>
-                    <button>Order Now</button>
+                <div class="pricing_card">
+                    <div>
+                        <h3 style="text-transform: uppercase">business</h3>
+                        <h5>Organize across all apps by hand</h5>
+                    </div>
+                    <div class="price_money__container">
+                        <div>
+                            <h1>10</h1>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>$</h3>
+                            </div>
+                            <div>
+                                <h5>Per Month</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button>Order Now</button>
+                    </div>
                 </div>
-            </div>
+                </div>
         </div>
 
         <div class="contact_wrapper">
@@ -253,96 +259,101 @@
             <div class="content_icons">
                 <div>
                     <img src="images/icon1.png"/>
-                    <p>6386 Spring St undefined Anchorage, Georgia 12473</p>
+                    <h5>6386 Spring St undefined Anchorage,<br> Georgia 12473</h5>
                 </div>
                 <div>
                     <img src="images/icon2.png"/>
-                    <p>(843) 555-0130</p>
+                    <h5>(843) 555-0130</h5>
                 </div>
                 <div>
                     <img src="images/icon3.png"/>
-                    <p>willie.jennings@example.com</p>
+                    <h5>willie.jennings@example.com</h5>
                 </div>
             </div>
-            </div>
-        </div>
-
-        <div class="form_wrapper">
-            <form action="/action_page.php">
-                <input type="name" id="name" name="name" placeholder="Your Name"><br>
-                <input type="email" id="email" name="email" placeholder="Your Email"><br>
-                <input type="message" id="message" name="message" placeholder="Your Message"><br>
-                <input type="submit" id="subscribe" value="Send"/>
-            </form>
-        </div>
-
-        <div>
-            <div class="credits">
-                <p>Eleanor Edwards</p>
-                <p>Ted Robertson</p>
-                <p>Annette Russell</p>
-                <p>Jennie Mckinney</p>
-                <p>Gloria Richards</p>
-            </div>
-        </div>
-
-        <div class="map_wrapper">
-            <style type="text/css">
-                /* Set the size of the div element that contains the map */
-                #map {
-                height: 247px;
-                /* The height is 400 pixels */
-                width: 358px;
-                /* The width is the width of the web page */
-                }
-            </style>
-            <script>
-                // Initialize and add the map
-                function initMap() {
-                // The location of Uluru
-                const uluru = { lat: 37.7633928, lng: -122.4245425 };
-                // The map, centered at Uluru
-                const map = new google.maps.Map(document.getElementById("map"), {
-                    zoom: 12.74,
-                    center: uluru,
-                });
-                // The marker, positioned at Uluru
-                const marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map,
-                });
-                }
-            </script>
-            <div>
-            <!--The div element for the map -->
-            <div id="map"></div>
         
-            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-            <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ubSWIO_4aS6WIRbjSLNkGnMWkNAKebM&callback=initMap&libraries=&v=weekly"
-                async
-            ></script>
+            <div class="contact_form">
+                <form action="/action_page.php">
+                    <input type="name" id="name" name="name" placeholder="Your Name"><br>
+                    <input type="email" id="email" name="email" placeholder="Your Email"><br>
+                    <input type="message" id="message" name="message" placeholder="Your Message"><br>
+                    <input type="submit" id="subscribe2" value="Send"/>
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom_wrapper">
+            <div class="credits_wrapper">
+                <div class="credits">
+                    <h3>Pages</h3>
+                    <p>Eleanor Edwards</p>
+                    <p>Ted Robertson</p>
+                    <p>Annette Russell</p>
+                    <p>Jennie Mckinney</p>
+                    <p>Gloria Richards</p>
+                </div>
             </div>
 
-            <div class="content_icons">
+            <div class="map_wrapper">
+                <style type="text/css">
+                    /* Set the size of the div element that contains the map */
+                    #map {
+                    height: 247px;
+                    /* The height is 400 pixels */
+                    width: 358px;
+                    /* The width is the width of the web page */
+                    border-radius: 22px;
+                    margin-bottom: 65px;
+                    }
+                </style>
+                <script>
+                    // Initialize and add the map
+                    function initMap() {
+                    // The location of Uluru
+                    const uluru = { lat: 37.7633928, lng: -122.4245425 };
+                    // The map, centered at Uluru
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 12.74,
+                        center: uluru,
+                    });
+                    // The marker, positioned at Uluru
+                    const marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map,
+                    });
+                    }
+                </script>
                 <div>
-                    <img src="images/icon1.png"/>
-                    <p>6386 Spring St undefined Anchorage, Georgia 12473</p>
-                </div>
-                <div>
-                    <img src="images/icon2.png"/>
-                    <p>(843) 555-0130</p>
-                </div>
-                <div>
-                    <img src="images/icon3.png"/>
-                    <p>willie.jennings@example.com</p>
+                <!--The div element for the map -->
+                <div id="map"></div>
+            
+                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ubSWIO_4aS6WIRbjSLNkGnMWkNAKebM&callback=initMap&libraries=&v=weekly"
+                    async
+                ></script>
                 </div>
             </div>
-            <div>
-                <img src="images/twitter.png"/>
-                <img src="images/facebook.png"/>
-                <img src="images/linked_in.png"/>
-            </div>
+
+                <div class="content_icons">
+                    <div>
+                        <img src="images/icon1.png"/>
+                        <h5 style="color: #374754; text-align: left;">6386 Spring St undefined Anchorage,<br>Georgia 12473 United States</h5>
+                    </div>
+                    <div>
+                        <img src="images/icon2.png"/>
+                        <h5 style="color: #374754">(843) 555-0130</h5>
+                    </div>
+                    <div>
+                        <img src="images/icon3.png"/>
+                        <h5 style="color: #374754">willie.jennings@example.com</h5>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/twitter.png"/>
+                    <img src="images/facebook.png"/>
+                    <img src="images/linked_in.png"/>
+                </div>
+            
         </div>
     </body>
 </html>
