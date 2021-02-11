@@ -11,6 +11,10 @@
     font-family: Roboto, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .desktop_nav_wrapper {
     display: none;
 }
@@ -886,6 +890,25 @@ h5 {
     .contact_wrapper__right > .contact_form > form > input:last-child {
         padding-left: 0.5px;
         padding-right: 0.5px;
+    }
+    .contact_wrapper {
+        height: 1100px;
+    }
+    .bottom_wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .bottom_wrapper > .credits_wrapper {
+        text-align: left;
+        margin-right: 126px;
+    }
+    .bottom_wrapper > .footer_special_section {
+        margin-left: 70px;
+        position: relative;
+        top: 35px;
+    }
+    .desktop_nav_wrapper > ul > li {
+        cursor: pointer;
     }
 
 
