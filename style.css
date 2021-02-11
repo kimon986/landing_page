@@ -1,9 +1,18 @@
 /*
+    QUESTION: Why is the third partner on the top slightly higher in both mine, and template?
+*/
+
+
+/*
     All version, default element style
 */
 
 * {
     font-family: Roboto, sans-serif;
+}
+
+.desktop_nav_wrapper {
+    display: none;
 }
 
 button {
@@ -120,6 +129,14 @@ h5 {
     Mobile version from 380px to 1280px
 */
 
+.desktop__h2 {
+    display: none;
+}
+
+.desktop__h2__2 {
+    display: none;
+}
+
 .home_nav {
     display: flex;
     justify-content: space-between;
@@ -171,6 +188,7 @@ h5 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .features_intro {
@@ -208,10 +226,11 @@ h5 {
 }
 
 .features_content_text {
-    width: 255px;
+    width: 30%;
     height: 81px;
     text-align: left;
-    margin: 0px 81.5px 95px 81.5px;
+    margin: 0 auto;
+    margin-bottom: 95px;
 }
 
 .demo_wrapper {
@@ -283,7 +302,10 @@ h5 {
 	outline: inherit;
     background-color: #F4F4F4;
     border-radius: 35px;
-    width: 353px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px; 
+    padding-right: 133px;
     height: 54px;
     color: #18171D;
 }
@@ -329,6 +351,11 @@ h5 {
     height: 40px;
 }
 
+.partner_wrapper > .partner_display > div {
+    margin-right: 36px;
+    margin-left: 36px;
+}
+
 .partner_wrapper > .partner_display > div > h5 {
     margin-bottom: 25px;
 }
@@ -339,11 +366,11 @@ h5 {
     margin-bottom: 50px;
 }
 
-.partner_wrapper > .partner_display > div:nth-child(3) {
+.partner_wrapper > .partner_display {
     margin-bottom: 108px;
 }
 
-.partner_wrapper > .partner_display > div:last-child {
+.partner_wrapper > div:last-child > button {
     color: #fff;
     margin-bottom: 50px;
 }
@@ -569,8 +596,7 @@ h5 {
 
 .contact_form > form > input:nth-child(5) {
     border-radius: 0px;
-    width: 280px;
-    height: 193px;
+    padding-bottom: 150px;
 }
 
 #subscribe2 {
@@ -621,5 +647,146 @@ h5 {
 */
 
 @media screen and (min-width: 1280px) {
+    .home_wrapper {
+        background-image: url(images/bg_main_desktop.svg);
+        background-position: center;
+        background-size: cover;
+        height: 787px;
+        margin-bottom: 80px;
+    }
+    .burger__container {
+        display: none;
+    }
+    .desktop_nav_wrapper {
+        display: flex;
+        margin-top: 25px;
+    }
+    .desktop_nav_wrapper > ul {
+        list-style: none;
+        display: flex;
+        color: #fff;
+        font: 'Roboto', sans-serif;
+    }
+    .desktop_nav_wrapper > ul > li {
+        margin-right: 41px;
+    }
+    .desktop_nav_wrapper > ul > li > form > input:first-child {
+        background: none;
+	    color: inherit;
+	    border: none;
+	    font: inherit;
+	    cursor: pointer;
+	    outline: inherit;
+        background-color: #F4F4F4;
+        border-radius: 35px;
+        padding: 13px 20px;
+        color: #18171D;
+        position: relative;
+        bottom: 10px;
+        margin-right: 10px;
+    }
+    .desktop_nav_wrapper > ul > li > form > input:last-child {
+        background: none;
+	    color: inherit;
+	    border: none;
+	    font: inherit;
+	    cursor: pointer;
+	    outline: inherit;
+        background-color: #fff;
+        color: #EF2779;
+        padding: 13px 20px;
+        border-radius: 35px;
+        transition: all 0.3s ease-in; 
+        position: relative;
+        bottom: 10px;
+        transition: all 0.3s ease-in;
+    } 
+    .desktop_nav_wrapper > ul > li > form > input:last-child:hover {
+        background-color: #EF2779;
+        color: #fff;
+    }
+    .home_content {
+        float: right;
+    }
+    .home_content > div:nth-child(3) {
+        float: left;
+        position: relative;
+        right: 700px;
+        bottom: 350px;
+        background-image: url(images/screen.svg);
+        width: 800px;
+        height: 531.13px;
+    }
+    .home_content > div:last-child > button {
+        position: relative;
+        bottom: 600px;
+        right: 130px;
+        color: #38A3F1;
+        background-color: #fff;
+        transition: all 0.3s ease-in;
+    }
+    .home_content > div:last-child > button:hover {
+        color: #fff;
+        background-color: #38A3F1;
+    }
+    .home_content > div:nth-child(2) > p {
+        width: 60%;
+        text-align: left;
+    }
+    .home_content > div:nth-child(2) {
+        position: relative;
+        left: 60px;
+    }
+    .mobile__h2 {
+        display: none;
+    }
+    .desktop__h2 {
+        display: flex;
+        position: relative;
+        right: 90px;
+    }
+    .features_wrapper {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 150px;
+    }
+    .features_intro > h4 {
+        color: #374754;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .features_wrapper > .features_content {
+        display: flex;
+        flex-direction: row;
+    }
+    .features_content__inner {
+        display: flex;
+        flex-direction: column;
+        margin-right: 33.5px;
+        margin-left: 33.5px;
+    }
+    .features_content_text {
+        width: 100%;
+    }
+    .demo_wrapper > div:last-child {
+        background-image: url(/images/macbookpro.svg);
+        width: 1033.26px;
+        height: 577.74px;
+    }
+    .mobile__h2__2 {
+        display: none;
+    }
+    .desktop__h2__2 {
+        display: flex;
+    }
+    .partner_wrapper > div > h4 {
+        color: #374754;
+    }
+    .partner_display {
+        display: flex;
+        flex-direction: row;
+    }
+
 
 }
