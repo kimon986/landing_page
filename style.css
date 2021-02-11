@@ -38,7 +38,7 @@ p {
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
-    color: #374754
+    color: #374754;
 }
 
 h1 {
@@ -129,11 +129,19 @@ h5 {
     Mobile version from 380px to 1280px
 */
 
+.desktop_img {
+    display: none;
+}
+
 .desktop__h2 {
     display: none;
 }
 
 .desktop__h2__2 {
+    display: none;
+}
+
+.desktop {
     display: none;
 }
 
@@ -360,6 +368,8 @@ h5 {
     margin-bottom: 25px;
 }
 
+/***/
+
 .partner_wrapper > .partner_display > div > p {
     width: 218px;
     height: 135px;
@@ -544,6 +554,18 @@ h5 {
 
 .contact_wrapper > div:nth-child(2) {
     margin-bottom: 92.48px;
+}
+
+.contact_wrapper__left > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.contact_wrapper__left > div:first-child > img {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .content_icons {
@@ -786,6 +808,84 @@ h5 {
     .partner_display {
         display: flex;
         flex-direction: row;
+    }
+    .desktop {
+        display: flex;
+    }
+    .desktop_img {
+        display: flex;
+    }
+    .mobile_img {
+        display: none;
+    }
+    .pricing_cards {
+        display: flex;
+        flex-direction: row;
+    }
+    .pricing_card {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    .pricing_card:nth-child(3) {
+        background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+        color: #fff;
+    }
+    .pricing_card:nth-child(3) button {
+        background-color: #fff;
+        color: #EF2779;
+        transition: all 0.3s ease-in;
+    }
+    .pricing_card:nth-child(3) button:hover {
+        background-color: #EF2779;
+        color: #fff;
+    }
+    .mobile__white {
+        color: #fff!important;
+    }
+    .mobile__grey {
+        color: #374754!important;
+    }
+    .pricing_card:nth-child(2) {
+        background: #fff;
+        color: black;
+    }
+    .pricing_card:nth-child(2) button {
+        background-color: #38A3F1;
+        color: #fff;
+        transition: all 0.3s ease-in;
+    }
+    .pricing_card:nth-child(2) button:hover {
+        background-color: #0e3c5d;
+    }
+    .contact_wrapper__desktop {
+        display: flex; 
+        flex-direction: row-reverse;
+    }
+    .contact_wrapper__left {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .contact_wrapper__right {
+        margin-right: 65px;
+    }
+    .contact_wrapper__right > .contact_form {
+        padding: 10px 10px;
+        width: 500px;
+        height: 600px;
+    }
+    .contact_wrapper__right > .contact_form > form > input {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 150px;
+    }
+    .contact_wrapper__right > .contact_form > form > input:nth-child(5) {
+        padding-bottom: 120px;
+    }
+    .contact_wrapper__right > .contact_form > form > input:last-child {
+        padding-left: 0.5px;
+        padding-right: 0.5px;
     }
 
 
