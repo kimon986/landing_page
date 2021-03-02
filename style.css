@@ -195,6 +195,27 @@ h5 {
     margin-bottom: 65.77px;
 }
 
+.desktop_nav_wrapper--active {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop_nav_wrapper--active ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .features_wrapper {
     display: flex;
     flex-direction: column;
