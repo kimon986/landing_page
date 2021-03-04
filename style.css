@@ -68,6 +68,7 @@ h3 {
     font-weight: bold;
     font-size: 22px;
     line-height: 33px;
+    text-align: center
 }
 
 h4 {
@@ -200,12 +201,13 @@ h5 {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
     top: 60px;
     left: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
 .desktop_nav_wrapper--active ul {
@@ -214,6 +216,62 @@ h5 {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-size: 1em;
+    color: #fff;
+    position: relative;
+    right: 17px;
+}
+
+.desktop_nav_wrapper--active ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.desktop_nav_wrapper--active ul li:hover:not(:last-child) {
+    background-color: #7934beb6;
+}
+
+.desktop_nav_wrapper--active ul li:last-child {
+    display: flex;
+    justify-content: center;
+}
+.desktop_nav_wrapper--active ul li:last-child form input {
+    border-radius: 20px;
+    border-color: transparent;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+input[type=email]:focus { /*how do i fix this blue outline?*/
+    border-radius: 20px;
+}
+.desktop_nav_wrapper--active ul li:last-child form input[type='submit'] {
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #7934beb4;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.desktop_nav_wrapper--active ul li:last-child form input[type='submit']:hover {
+    background-color: #7934beb6;
+    cursor: pointer;
+    color: #fff;
+} 
+
+::placeholder {
+    color: #7834BE;
+}
+
+.desktop_nav_wrapper--active ul li:last-child form input::placeholder {
+    font-size: 1em;
 }
 
 .features_wrapper {
@@ -259,6 +317,11 @@ h5 {
 }
 
 .features_content_text {
+    display: none;
+}
+
+.features_content_text--active {
+    display: flex;
     width: 30%;
     height: 81px;
     text-align: left;
@@ -342,8 +405,6 @@ h5 {
     height: 54px;
     color: #18171D;
 }
-
-/*** Q: How do I change padding of the editable text? ***/
 
 .newsletter_wrapper > div:last-child > form > input::placeholder {
     padding-left: 35px;
@@ -689,6 +750,57 @@ h5 {
     margin-right: 32.33px;
 }
 
+/*testing*/
+.dropdown__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.dropdown__item {
+    padding: 5px;
+    color:black;
+    font-size: 0.7em;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+  
+  .dropdown__header {
+    cursor:pointer;
+    padding:5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .dropdown__header > h3 {
+      position: relative;
+      top: 2px;
+      text-align: left;
+  }
+
+  .dropdown__header > img {
+      height: 40px;
+      margin-right: 15px;
+  }
+  
+  .dropdown__content {
+    position: relative;
+    opacity: 0;
+    height: 0;
+    transition-duration: 0.3s;
+    z-index:-1;
+  }
+  
+  .dropdown__content--active {
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    height: 50px;
+    padding: 10px 5px;
+  }
 /*
     Desktop version from 1280px to ~
 */
@@ -931,6 +1043,5 @@ h5 {
     .desktop_nav_wrapper > ul > li {
         cursor: pointer;
     }
-
 
 }

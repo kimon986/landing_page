@@ -6,3 +6,15 @@ const handleOpenMenu = () => {
 }
 
 burgerElement.addEventListener('click', handleOpenMenu)
+
+
+/*testing*/
+const dropdownHeaders = document.querySelectorAll('span.dropdown__header')
+const dropdownContents = document.querySelectorAll('.dropdown__content')
+
+for (let i = 0; i < dropdownHeaders.length; i++) {
+  dropdownHeaders[i].addEventListener('click', () => {
+    dropdownContents[i].classList.toggle('dropdown__content--active')
+  })
+}
+
