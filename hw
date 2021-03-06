@@ -3,6 +3,5 @@ HW:
 2) Create dropdown menu for features block
 
 Questions:
-1) How do I make the outline of my form match?
-2) How do I fix my burger scrolling issue?
-3) Why can't I change my flex direction for the desktop version?
+1) CSS - How do I make the outline of my form match?
+2) CSS - How do I make background 100% of width?

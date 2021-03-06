@@ -110,6 +110,7 @@ h5 {
 }
 
 .burger__container > div {
+    border-radius: 3px;
     width:27px;
     height:3px;
     background-color: #fff;
@@ -129,7 +130,29 @@ h5 {
     width:27px;
 }
 
+.close__wrapper {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    cursor: pointer;
+}
 
+.close__wrapper > div {
+    border-radius: 3px;
+    width:27px;
+    height:3px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: all 0.3s;
+}
+.close__wrapper > div:first-child {
+    transform: translateY(-4.6px) rotate(135deg);
+
+}
+
+.close__wrapper > div:last-child {
+    transform: translateY(-10px) rotate(-135deg);
+}
 /*
     Mobile version from 380px to 1280px
 */
@@ -202,7 +225,7 @@ h5 {
     width: 100%;
     height: 100%;
     background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
-    top: 60px;
+    top: 0;
     left: 0;
     flex-direction: column;
     justify-content: center;
@@ -249,15 +272,15 @@ h5 {
     padding-left: 10px;
 }
 input[type=email]:focus { /*how do i fix this blue outline?*/
-    border-radius: 20px;
+    outline: none;
 }
 .desktop_nav_wrapper--active ul li:last-child form input[type='submit'] {
     padding-left: 10px;
     padding-right: 10px;
     transition: all 0.3s ease-in-out;
     color: #7934beb4;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .desktop_nav_wrapper--active ul li:last-child form input[type='submit']:hover {
@@ -266,7 +289,7 @@ input[type=email]:focus { /*how do i fix this blue outline?*/
     color: #fff;
 } 
 
-::placeholder {
+holder {
     color: #7834BE;
 }
 
@@ -792,6 +815,7 @@ input[type=email]:focus { /*how do i fix this blue outline?*/
     height: 0;
     transition-duration: 0.3s;
     z-index:-1;
+    font-size: 15px;
   }
   
   .dropdown__content--active {
@@ -805,7 +829,7 @@ input[type=email]:focus { /*how do i fix this blue outline?*/
     Desktop version from 1280px to ~
 */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1000px) {
     .home_wrapper {
         background-image: url(images/bg_main_desktop.svg);
         background-position: center;
@@ -908,7 +932,7 @@ input[type=email]:focus { /*how do i fix this blue outline?*/
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        margin-bottom: 150px;
+        margin-bottom: 70px;
     }
     .features_intro > h4 {
         color: #374754;
@@ -1043,5 +1067,51 @@ input[type=email]:focus { /*how do i fix this blue outline?*/
     .desktop_nav_wrapper > ul > li {
         cursor: pointer;
     }
+    .dropdown__container {
+        display: flex;
+        flex-direction: row;
+        margin-right: 100px;
+        margin-left: 200px;
+        margin-bottom: 150px;
+    }
+    .dropdown__item {
+        padding: 5px;
+        color:black;
+        font-size: 0.7em;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+      }
+      
+      .dropdown__header {
+        cursor:pointer;
+        padding:5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 250px;
+        margin-bottom: 10px;
+      }
+    
+      .dropdown__header > h3 {
+          position: relative;
+          top: 2px;
+          text-align: left;
+      }
+    
+      .dropdown__header > img {
+          height: 40px;
+          margin-right: 15px;
+      }
+    
+      .dropdown__content--active {
+        position: relative;
+        opacity: 1;
+        z-index: 1;
+        height: 0px;
+        padding: 0px 0px;
+      }
+
+
 
 }
