@@ -233,6 +233,8 @@ h5 {
     z-index: 9999;
 }
 
+
+
 .desktop_nav_wrapper--active ul {
     list-style: none;
     display: flex;
@@ -378,6 +380,37 @@ holder {
     background-image: url(/images/macbookpro.png);
     width: 378.95px;
     height: 211.89px;
+}
+
+.demo_wrapper > div:last-child > div {
+    background-image:url("/images/castlebeckett.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    z-index: 9999;
+    height: 185px;
+    width: 300px;
+    position: relative;
+    left: 40px;
+    bottom: 39px;
+}
+#left-arrow,
+#right-arrow {
+    color: #18171d;
+    font-size: 2em;
+    border-radius: 50%;
+    background-color: #d0d0d0;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+#left-arrow {
+    position: relative;
+    top: 80px;
+    right: 70px;
+}
+#right-arrow {
+    position: relative;
+    left: 410px;
+    bottom: 152px;   
 }
 
 .newsletter_wrapper {
